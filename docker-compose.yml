@@ -7,3 +7,9 @@ services:
       - ./poc-submodule-child-1/app:/workspace/app
     ports:
       - 3000:5173
+  backend:
+    build:
+      context: ./poc-submodule-child-2
+      dockerfile: Dockerfile
+    ports:
+      - 3001:3001
