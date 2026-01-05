@@ -1,15 +1,15 @@
 services:
   frontend:
     build:
-      context: ./poc-submodule-child-1
+      context: ./poc-submodule-frontend
       dockerfile: Dockerfile
     volumes:
-      - ./poc-submodule-child-1/app:/workspace/app
+      - ./poc-submodule-frontend/app:/workspace/app
     ports:
       - 3000:5173
   backend:
     build:
-      context: ./poc-submodule-child-2
+      context: ./poc-submodule-backend
       dockerfile: Dockerfile
     ports:
       - 3001:3001
