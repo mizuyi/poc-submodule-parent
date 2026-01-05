@@ -4,3 +4,6 @@
 [submodule "poc-submodule-child-2"]
 	path = poc-submodule-child-2
 	url = https://github.com/mizuyi/poc-submodule-child-2.git
+[submodule "poc-submodule-frontend"]
+	path = poc-submodule-frontend
+	url = https://github.com/mizuyi/poc-submodule-frontend.git
